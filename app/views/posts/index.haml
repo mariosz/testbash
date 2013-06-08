@@ -1,0 +1,18 @@
+%h1 INDEX POSTOW
+
+= link_to "New", new_post_path
+
+%table
+  %tr 
+    %td id
+    %td mail
+    %td actions
+  - @posts.each do |post|
+    %tr
+      %td= post.id
+      %td= post.user.email
+      %td
+        = link_to "Show", post_path(post), class: "btn btn-info"
+        = link_to "Edit", edit_post_path(post)
+        = simple_form_for post, method: :delete do |f|
+          = f.submit "Delete"

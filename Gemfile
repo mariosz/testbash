@@ -12,3 +12,6 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
+gem "haml-rails"
+gem 'simple_form'
+gem 'bootstrap-sass'

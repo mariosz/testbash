@@ -1,3 +1,12 @@
+default:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: testbash_development
+  options:
+    identity_map_enabled: true
+
 development:
   sessions:
     default:
