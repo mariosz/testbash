@@ -1,0 +1,36 @@
+development:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: testbash_development
+  options:
+    identity_map_enabled: true
+
+staging:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: testbash_staging
+  options:
+    identity_map_enabled: true
+
+test:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: testbash_test
+  options:
+    identity_map_enabled: true
+
+# set these environment variables on your prod server
+production:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: testbash_production
+  options:
+    identity_map_enabled: true
